@@ -1,0 +1,93 @@
+.ProductDetail{
+    margin-top: 20px;
+    .product-layout{
+        display: flex;
+    }
+
+    .product-img{
+        max-width: 600px;
+        height: 600px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img{
+            height: 100%;
+            object-fit: contain;
+            transform: scale(0.8);
+            cursor: pointer;
+        }
+
+        img:hover{
+            transform: scale(1);
+        }
+    }
+
+    .product-info{
+        margin-top: 140px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        .cart-options{
+            .quantity-selector{
+                border: 1px solid var(--secondary-text-color);
+                width: fit-content;
+
+                .btn{
+                    padding: 8px 16px;
+                    background-color: #eee;
+                    color: var(--primary-text-color);
+                    display: inline-block;  //because span
+                    cursor: pointer;
+                    font-size: 1.2rem;
+                    user-select: none;
+                    &:hover {
+                        background-color: #ddd;
+                    }
+                    &:active {
+                        background-color: #eee;
+                    }
+                }
+
+                .quantity{
+                    text-align: center;
+                    width: 50px;
+                    display: inline-block;
+                    font-weight: 500;
+                }
+            }
+
+            .add-to-cart{
+                margin-top: 20px;
+            }
+        }
+
+        .return-policy{
+            border-top: 1px dashed #ccc;
+            color: var(--secondary-text-color);
+            font-size: 0.8rem;
+            margin-top: 10px;
+            padding-top: 10px;
+
+            ul{
+                list-style: circle;
+                li {
+                    margin-top: 6px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px){
+    .ProductDetail{
+        .product-layout{
+            flex-direction: column;
+
+            .product-info{
+                margin-top: 0;
+            }
+        }
+    }
+}

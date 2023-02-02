@@ -1,7 +1,8 @@
 import React from 'react';
 import './Footer.scss';
 import {AiOutlineFacebook, AiOutlineInstagram, AiOutlineMail, AiOutlineTwitter} from "react-icons/ai";
-import creditCardImg from '../../assets/creditcardicons.png'
+import creditCardImg from '../../assets/creditcardicons.png';
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -29,11 +30,18 @@ const Footer = () => {
               <div className="footer-right">
                     <h3 className="title">Company</h3>
                     <ul className="company">
-                        <li className="hover-link">Contact Us</li>
-                        <li className="hover-link">Privacy Policy</li>
-                        <li className="hover-link">Returns Policy</li>
-                        <li className="hover-link">Shipping Policy</li>
-                        <li className="hover-link">Terms & Conditions</li>
+                        <li className="hover-link">
+                           <Link className="footer-link" to="/contact">Contact Us</Link>
+                        </li>
+                        <li className="hover-link">
+                           <Link className="footer-link" to="/privacy-policy">Privacy Policy</Link>
+                        </li>
+                        <li className="hover-link">
+                           <Link className="footer-link" to="/return-policy">Returns Policy</Link>
+                        </li>
+                        <li className="hover-link">
+                           <Link className="footer-link" to="/terms">Terms & Conditions</Link>
+                        </li>
                     </ul>
               </div>
         </div>

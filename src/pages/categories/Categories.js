@@ -2,42 +2,54 @@ import React, { useEffect, useState } from 'react';
 import './Categories.scss';
 import Product from "../../components/product/Product";
 import { useNavigate, useParams } from "react-router";
+import { useSelector } from "react-redux";
+import { axiosClient } from "../../utils/axiosClient";
 
 const Categories = () => {
   const navigate = useNavigate();
   const params = useParams();
   const [categoryId, setCategoryId] = useState('');
+  const categories = useSelector((state) => state.categoryReducer.categories);
+  const [products, setProducts] = useState([]);
 
-  const categoryList = [
-    {
-        id: "posters",
-        value: "Posters",
-    },
-    {
-        id: "anime",
-        value: "Anime",
-    },
-    {
-        id: "coding",
-        value: "Coding",
-    },
-    {
-      id: "mugs",
-      value: "Mugs",
-    },
-    {
-      id: "cloud",
-      value: "Cloud",
-    },
-    {
-      id: "webdev",
-      value: "Webdev",
-    }
-];
+//   const categoryList = [
+//     {
+//         id: "posters",
+//         value: "Posters",
+//     },
+//     {
+//         id: "anime",
+//         value: "Anime",
+//     },
+//     {
+//         id: "coding",
+//         value: "Coding",
+//     },
+//     {
+//       id: "mugs",
+//       value: "Mugs",
+//     },
+//     {
+//       id: "cloud",
+//       value: "Cloud",
+//     },
+//     {
+//       id: "webdev",
+//       value: "Webdev",
+//     }
+// ];
+
+async function fetchProducts() {
+  const url = params.categoryId
+      ? `/products?populate=image&filters[category][key][$eq]=${params.categoryId}`
+      : `/products?populate=image`;
+  const response = await axiosClient.get(url);
+  setProducts(response.data.data);
+}
 
 useEffect(() => {
   setCategoryId(params.categoryId);
-  //api call 
+  fetchProducts();  //api call 
 }, [params])
 
 function updateCategory(e) {
@@ -59,10 +71,10 @@ function updateCategory(e) {
           <div className="filter-box">
             <div className="category-filter">
                 <h3>Category</h3>
-                {categoryList.map((item) => (
+                {categories.map((item) => (
                     <div key={item.id} className='filter-radio'>
-                        <input name="category" type="radio" value={item.id} id={item.id} onChange={updateCategory} checked={item.id === categoryId}/>
-                        <label htmlFor={item.id}>{item.value}</label>
+                        <input name="category" type="radio" value={item.attributes.key} id={item.id} onChange={updateCategory} checked={item.attributes.key === categoryId}/>
+                        <label htmlFor={item.id}>{item.attributes.title}</label>
                     </div>
                 ))}
                 {/* <div className='filter-radio'>
@@ -76,12 +88,9 @@ function updateCategory(e) {
             </div>
           </div>
           <div className="products-box">
-              <Product />
-              <Product />
-              <Product />
-              <Product />
-              <Product />
-              <Product />
+              {products.map((product) => (
+                  <Product key={product.id} product={product} />
+              ))}
            </div>
         </div>
 

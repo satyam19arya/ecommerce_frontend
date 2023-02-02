@@ -3,9 +3,12 @@ import './Navbar.scss';
 import { Link } from "react-router-dom";
 import { BsCart2 } from "react-icons/bs";
 import Cart from "../cart/Cart";
+// import { useSelector } from "react-redux";
+
 
 const Navbar = () => {
   const [openCart, setOpenCart] = useState(false);
+  // const categories = useSelector((state) => state.categoryReducer.categories);
 
   return (
     <>
@@ -13,14 +16,19 @@ const Navbar = () => {
         <div className="container nav-container">
           <div className="nav-left">
               <ul className="link-group">
+                    {/* {categories?.map((category) => (
+                            <li className="hover-link" key={category.id}>
+                                <Link className="link" to={`/category/${category.attributes.key}`}>{category.attributes.title}</Link>
+                            </li>
+                    ))} */}
                     <li className="hover-link">
-                          <Link className="link" to="/products?category=posters">Posters</Link>
+                          <Link className="link" to="/">Home</Link>
                     </li>
                     <li className="hover-link">
-                          <Link className="link" to="/products?category=anime">anime</Link>
+                          <Link className="link" to="/category">Categories</Link>
                     </li>
                     <li className="hover-link">
-                          <Link className="link" to="/products?category=coding">coding</Link>
+                          <Link className="link" to="/contact">Contact us</Link>
                     </li>
               </ul>
           </div>

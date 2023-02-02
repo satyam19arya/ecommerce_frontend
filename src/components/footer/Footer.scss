@@ -36,11 +36,14 @@
         .company {
             li {
                 margin-top: 10px;
-                color: var(--secondary-text-color);
+            }
+        }
 
-                &:hover {
-                    color: var(--accent-color);
-                }
+        .footer-link{
+            color: var(--secondary-text-color);
+
+            &:hover {
+                color: var(--accent-color);
             }
         }
     }

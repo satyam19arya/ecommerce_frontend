@@ -7,6 +7,7 @@
     z-index: 99;
     display: flex;
     justify-content: flex-end;
+    overflow-y: auto;
 
     .overlay {
         position: absolute;
@@ -15,11 +16,12 @@
         width: 100%;
         height: 100%;
         background-color: rgba($color: #000000, $alpha: 0.7);
+        position: fixed;
     }
 
     .cart-content{
         height: 100vh;
-        width: 320px;
+        width: 330px;
         position: relative;
         background-color: white;
         animation: cartSlider 0.5s ease forwards;
@@ -47,6 +49,24 @@
                 &:active {
                     opacity: 1;
                 }
+            }
+        }
+
+        .empty-cart-info {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-top: 30vh;
+            align-items: center;
+            justify-content: center;
+
+            .icon {
+                font-size: 4rem;
+                color: var(--secondary-text-color);
+            }
+
+            h3 {
+                color: var(--secondary-text-color);
             }
         }
     

@@ -1,6 +1,6 @@
 .Hero{
     height: 80vh;
-    background-image: url('../../assets/banner.jpeg');
+    background-image: url('../../assets/poster.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -9,7 +9,7 @@
         flex-direction: column;
         gap: 10px;
         text-align: center;
-        background-color: rgba(0, 0, 0, 0.6);
+        background-color: rgba(0, 0, 0, 0.7);
 
         .heading {
             color: white;

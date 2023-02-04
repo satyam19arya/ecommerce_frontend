@@ -27,6 +27,10 @@ const Footer = () => {
                   </ul>
              </div>
 
+             <div className="middle">
+             <h3 className="title">About us</h3>
+             </div>
+
               <div className="footer-right">
                     <h3 className="title">Company</h3>
                     <ul className="company">
@@ -50,6 +54,7 @@ const Footer = () => {
               <div className="credit-card-img">
                   <img src={creditCardImg} alt="credit card img" />
               </div>
+              <p>By continuing past this page, you agree to our Terms of Service, Privacy Policy and Content Policies. All trademarks are properties of their respective owners.</p>
               <p>Copyright {new Date().getFullYear()} © <strong>E-commerce</strong></p>
           </div>
       </div>

@@ -24,18 +24,6 @@ const Categories = () => {
 //     {
 //         id: "coding",
 //         value: "Coding",
-//     },
-//     {
-//       id: "mugs",
-//       value: "Mugs",
-//     },
-//     {
-//       id: "cloud",
-//       value: "Cloud",
-//     },
-//     {
-//       id: "webdev",
-//       value: "Webdev",
 //     }
 // ];
 
@@ -49,8 +37,8 @@ async function fetchProducts() {
 
 useEffect(() => {
   setCategoryId(params.categoryId);
-  fetchProducts();  //api call 
-}, [params])
+  fetchProducts();  // eslint-disable-next-line 
+}, [params]) 
 
 function updateCategory(e) {
   navigate(`/category/${e.target.value}`);

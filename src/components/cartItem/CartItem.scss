@@ -3,10 +3,11 @@
     gap: 8px;
     margin-block: 8px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding-left: 10px;
 
     .item-img {
-        width: 80px;
-        height: 80px;
+        width: 90px;
+        height: 90px;
 
         img {
             width: 100%;
@@ -71,6 +72,7 @@
 
         .item-remove {
             cursor: pointer;
+            height: fit-content ;
             &:hover {
                 opacity: 0.6;
                 color: red;

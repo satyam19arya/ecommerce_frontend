@@ -31,8 +31,8 @@ const Home = () => {
         <Hero />
         <section className="collection container">
             <div className="info">
-                <h2 className="heading">Shop By Categories</h2>
-                <p className="subheading">Shop from the best, our T-shirts and Posters Collection</p>
+                <h2 className="heading">Order By Categories</h2>
+                <p className="subheading">Order from the best, our T-shirts and Posters Collection</p>
             </div>
             <div className="content">
                 {categories?.map((category) => (

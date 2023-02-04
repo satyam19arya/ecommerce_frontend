@@ -4,10 +4,16 @@ import './ProductDetail.scss';
 import { useParams } from "react-router";
 import { axiosClient } from "../../utils/axiosClient";
 import Loader from "../../components/loader/Loader";
+import { useDispatch, useSelector } from "react-redux";
+import { addToCart, removeFromCart } from "../../redux/slices/cartSlice";
 
 const  ProductDetail = () => {
   const params = useParams();
   const [product, setProduct] = useState(null);
+  const dispatch = useDispatch();
+
+  const cart = useSelector(state => state.cartReducer.cart);
+  const quantity = cart.find(item => item.key === params.productId)?.quantity || 0;
 
   async function fetchData() {
       const productResponse = await axiosClient.get(`/products?filters[key][$eq]=${params.productId}&populate=*`);
@@ -18,8 +24,8 @@ const  ProductDetail = () => {
 
   useEffect(() => {
       setProduct(null);
-      fetchData();
-  }, [params]);
+      fetchData(); // eslint-disable-next-line
+  }, [params]); 
 
   if (!product) {
     return <Loader />;
@@ -41,11 +47,11 @@ const  ProductDetail = () => {
 
               <div className="cart-options">
                   <div className="quantity-selector">
-                        <span className="btn decrement">-</span>
-                        <span className="quantity">3</span>
-                        <span className="btn increment">+</span>
+                        <span className="btn decrement" onClick={() => dispatch(removeFromCart(product))}>-</span>
+                        <span className="quantity">{quantity}</span>
+                        <span className="btn increment" onClick={() => dispatch(addToCart(product))}>+</span>
                   </div>
-                  <button className="btn-primary add-to-cart">Add to Cart</button>
+                  <button className="btn-primary add-to-cart" onClick={() => dispatch(addToCart(product))}>Add to Cart</button>
               </div>
 
               <div className="return-policy">

@@ -23,7 +23,8 @@
 
             li{
                 border-radius: 50%;
-                font-size: 30px;
+                font-size: 25px;
+                color: var(--secondary-text-color);
 
                 &:hover {
                     color: var(--accent-color);

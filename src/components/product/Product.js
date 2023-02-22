@@ -5,6 +5,7 @@ import { useNavigate } from "react-router";
 
 const Product = ({product}) => {
   const navigate = useNavigate();
+  console.log(product);
 
   return (
     <div className="Product" onClick={() => navigate(`/products/${product?.attributes.key}`)}>

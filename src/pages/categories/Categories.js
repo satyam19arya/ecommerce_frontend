@@ -12,6 +12,7 @@ const Categories = () => {
   const categories = useSelector((state) => state.categoryReducer.categories);
   const [products, setProducts] = useState([]);
 
+
 //   const categoryList = [
 //     {
 //         id: "posters",
@@ -32,7 +33,9 @@ async function fetchProducts() {
       ? `/products?populate=image&filters[category][key][$eq]=${params.categoryId}`
       : `/products?populate=image`;
   const response = await axiosClient.get(url);
+  console.log(response);
   setProducts(response.data.data);
+
 }
 
 useEffect(() => {

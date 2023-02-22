@@ -8,7 +8,7 @@
         justify-content: space-around;
         gap: 300px;
 
-        .title {
+        .title{
             text-transform: uppercase;
             font-weight: 700;
             margin-bottom: 15px;
@@ -33,6 +33,22 @@
         }
     }
 
+    .middle{
+        .company {
+            li {
+                margin-top: 10px;
+            }
+        }
+
+        .footer-link{
+            color: var(--secondary-text-color);
+
+            &:hover {
+                color: var(--accent-color);
+            }
+        }
+    }
+
     .footer-right {
         .company {
             li {
@@ -51,6 +67,7 @@
 
     .subfooter {
         flex-direction: column;
+        margin-top: 28px;
 
         .credit-card-img {
             width: 200px;

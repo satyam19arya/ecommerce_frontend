@@ -1,0 +1,52 @@
+.download-app{
+    margin-top: 65px;
+    .android{
+        display: grid;
+        grid-template-columns: 40% 60%;
+        gap: 30px;
+
+        .heading{
+            display: flex;
+            flex-direction: column;
+            justify-content:center;
+            align-items:flex-start;
+
+            h1{
+                margin-bottom: 15px;
+            }
+
+            p{
+                line-height: 1.5em;
+                margin-bottom: 30px;
+            }
+        }
+
+        .img-container{
+            display: flex;
+            justify-content:center;
+            align-items:center;
+    
+            .img{
+                width: 450px;
+                height: 450px;
+            }
+        }
+
+        .store{
+            margin-right: 15px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .download-app{
+        .android{
+            display: grid;
+            grid-template-columns: 1fr;
+
+            .img{
+                display: none;
+            }
+        }
+    }
+}

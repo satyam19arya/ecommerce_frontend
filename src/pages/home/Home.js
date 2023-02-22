@@ -5,6 +5,7 @@ import Category from "../../components/category/Category";
 import Product from "../../components/product/Product";
 import { axiosClient } from "../../utils/axiosClient";
 import { useSelector } from "react-redux";
+import Andriod from "../../components/android/Android";
 
 const Home = () => {
     // const [categories, setCategories] = useState(null);
@@ -52,6 +53,23 @@ const Home = () => {
                 ))}
             </div>
         </section>
+
+        <section id="book-food">
+            <div className="book-food">
+                <div className="container">
+                <div className="text-center">
+                    <div className="heading">
+                        <h2>Want to know about us?</h2>
+                    </div>
+                    <div className="sub-heading">
+                    <button className="btn-primary">Click here</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </section>
+
+        <Andriod/>
     </div>
   )
 }

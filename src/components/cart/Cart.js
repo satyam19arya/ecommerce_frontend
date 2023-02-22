@@ -36,7 +36,7 @@ const Cart = ({onClose}) => {
        <div className="overlay" onClick={onClose}></div>
          <div className="cart-content">
             <div className="header">
-                <h3>Your Cart</h3>
+                <h4>Cart</h4>
                 <div className="close-btn" onClick={onClose}>
                     <AiOutlineCloseCircle /> Close
                 </div>

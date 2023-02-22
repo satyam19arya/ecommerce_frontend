@@ -28,7 +28,21 @@ const Footer = () => {
              </div>
 
              <div className="middle">
-             <h3 className="title">About us</h3>
+                <h3 className="title">Links</h3>
+                <ul className="company">
+                    <li className="hover-link">
+                        <Link className="footer-link" to="/">About us</Link>
+                    </li>
+                    <li className="hover-link">
+                        <Link className="footer-link" to="/category">Catogories</Link>
+                    </li>
+                    <li className="hover-link">
+                        <Link className="footer-link" to="/">Android App</Link>
+                    </li>
+                    <li className="hover-link">
+                        <Link className="footer-link" to="/">Github link</Link>
+                    </li>
+                </ul>
              </div>
 
               <div className="footer-right">

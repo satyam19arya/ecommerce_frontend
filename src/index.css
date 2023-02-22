@@ -9,7 +9,7 @@
 }
 
 body{
-  font-family:'Cabin', 'Poppins', sans-serif;
+  font-family: 'Poppins', sans-serif;
   scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -22,21 +22,12 @@ body{
 :root {
   --primary-text-color: #212121;
   --secondary-text-color: #888;
-  --accent-color: #8800c7;
+  --accent-color: #8104ba;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
       monospace;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  color: var(--primary-text-color);
 }
 
 p {

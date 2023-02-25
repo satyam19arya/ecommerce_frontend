@@ -33,7 +33,12 @@
 
 @media screen and (max-width: 640px) { 
     .Hero {
+        background: none;
+        text-align: center;
         .hero-content {
+            width: 100%;
+            padding: 15px;
+            align-items: center;
             .heading {
                 font-size: 2rem;
             }

@@ -33,9 +33,8 @@ async function fetchProducts() {
       ? `/products?populate=image&filters[category][key][$eq]=${params.categoryId}`
       : `/products?populate=image`;
   const response = await axiosClient.get(url);
-  console.log(response);
+  // console.log(response);
   setProducts(response.data.data);
-
 }
 
 useEffect(() => {

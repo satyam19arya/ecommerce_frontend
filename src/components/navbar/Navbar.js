@@ -4,10 +4,13 @@ import { Link } from "react-router-dom";
 import { BsCart2 } from "react-icons/bs";
 import Cart from "../cart/Cart";
 import { useSelector } from "react-redux";
+import { TbSearch } from "react-icons/tb";
+import Search from "../search/Search";
 
 
 const Navbar = () => {
   const [openCart, setOpenCart] = useState(false);
+  const [openSearch, setOpenSearch] = useState(false);
   // const categories = useSelector((state) => state.categoryReducer.categories);
   const cart = useSelector(state => state.cartReducer.cart);
   let totalItems = 0;
@@ -41,6 +44,9 @@ const Navbar = () => {
           </div>
 
           <div className="nav-right">
+            <div className="center search hover-link" onClick={() => setOpenSearch(!openSearch)}>
+                <TbSearch/>
+            </div>
             <div className="nav-cart hover-link" onClick={() => setOpenCart(!openCart)}>
                 <BsCart2 className="icon" />
                 {totalItems > 0 && <span className="cart-count center">{totalItems}</span>}
@@ -49,6 +55,7 @@ const Navbar = () => {
         </div>
       </nav>
       {openCart && <Cart onClose={() => setOpenCart(false)} />}
+      {openSearch && <Search onClose={() => setOpenSearch(false)} />}
     </>
   )
 }

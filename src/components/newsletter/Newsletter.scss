@@ -1,0 +1,25 @@
+.newsletter{
+    width: 75%;
+    margin: 70px auto;
+    text-align: center;
+
+    .latest{
+        line-height: 1.8em;
+    }
+
+    .form{
+        width: 70%;
+        margin: 12px auto;
+
+        .form-control{
+            height: 2.5rem;
+            font-size: 0.875rem;
+            padding: 10px;
+            font-weight: 400;
+            width: 70%;
+            border-radius: 0.5rem;
+            border: 1px solid rgba($color: #000000, $alpha: 0.1);
+            margin-bottom: 12px;
+        }     
+    }
+}

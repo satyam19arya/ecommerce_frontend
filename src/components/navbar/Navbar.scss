@@ -38,6 +38,12 @@
         }
 
         .nav-right {
+            display: flex;
+            .search{
+                margin-right: 10px;
+                font-size: 1.3rem;
+                padding: 6px;
+            }
             .nav-cart {
                 position: relative;
                 padding: 6px;

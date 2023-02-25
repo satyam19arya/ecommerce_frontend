@@ -1,24 +1,28 @@
 .Hero{
-    height: 80vh;
-    // background-image: url('../../assets/poster.jpg');
-    background-repeat: no-repeat;
+    height: 87vh;
+    width: 100%;
+    background: url('../../assets/bg.jpg') no-repeat center;
     background-size: cover;
 
     .hero-content{
         height: 100%;
+        display: flex;
         flex-direction: column;
-        gap: 10px;
-        text-align: center;
-        background-color: rgba(0, 0, 0, 0.7);
+        align-items: flex-start;
+        gap: 15px;
+        padding: 60px;
+        width: 47%;
 
         .heading {
-            color: white;
-            font-size: 3rem;
+            color: var(--accent-color);
+            font-size: 2.7rem;
+            font-weight: 900;
         }
 
         .subheading {
-            color: whitesmoke;
+            color: var(--secondary-text-color);
             font-size: 1.2rem;
+            line-height: 1.8rem;
         }
 
         .cta {

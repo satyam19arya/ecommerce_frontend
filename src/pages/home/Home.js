@@ -5,7 +5,8 @@ import Category from "../../components/category/Category";
 import Product from "../../components/product/Product";
 import { axiosClient } from "../../utils/axiosClient";
 import { useSelector } from "react-redux";
-import Andriod from "../../components/android/Android";
+import Android from "../../components/android/Android";
+import Newsletter from "../../components/newsletter/Newsletter";
 
 const Home = () => {
     // const [categories, setCategories] = useState(null);
@@ -69,7 +70,8 @@ const Home = () => {
             </div>
         </section>
 
-        <Andriod/>
+        <Android/>
+        <Newsletter/>
     </div>
   )
 }

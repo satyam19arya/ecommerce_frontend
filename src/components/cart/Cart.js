@@ -1,11 +1,11 @@
 import React from 'react';
 import './Cart.scss';
-import { AiOutlineCloseCircle } from "react-icons/ai";
 import CartItem from "../cartItem/CartItem";
 import { useSelector } from "react-redux";
 import { BsCartX } from "react-icons/bs";
 import {axiosClient} from '../../utils/axiosClient';
 import {loadStripe} from '@stripe/stripe-js';
+import { MdClose } from "react-icons/md";
 
 const Cart = ({onClose}) => {
   const cart = useSelector((state) => state.cartReducer.cart);
@@ -36,9 +36,9 @@ const Cart = ({onClose}) => {
        <div className="overlay" onClick={onClose}></div>
          <div className="cart-content">
             <div className="header">
-                <h4>Cart</h4>
+                <h4 className='myCart'>My order Cart</h4>
                 <div className="close-btn" onClick={onClose}>
-                    <AiOutlineCloseCircle /> Close
+                    <MdClose />
                 </div>
             </div>
 

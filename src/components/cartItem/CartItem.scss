@@ -70,17 +70,17 @@
             }
         }
 
-        .item-remove {
-            cursor: pointer;
-            height: fit-content ;
-            &:hover {
-                opacity: 0.6;
-                color: red;
-            }
+        // .item-remove {
+        //     cursor: pointer;
+        //     height: fit-content ;
+        //     &:hover {
+        //         opacity: 0.6;
+        //         color: red;
+        //     }
 
-            &:active {
-                opacity: 1;
-            }
-        }
+        //     &:active {
+        //         opacity: 1;
+        //     }
+        // }
     }
 }

@@ -1,7 +1,7 @@
 import React from 'react';
 import './CartItem.scss';
 // import dummyImage from '../../assets/naruto.jpeg';
-import { AiOutlineClose } from "react-icons/ai";
+// import { AiOutlineClose } from "react-icons/ai";
 import { addToCart, removeFromCart } from "../../redux/slices/cartSlice";
 import { useDispatch } from "react-redux";
 
@@ -25,9 +25,9 @@ const CartItem = ({cart}) => {
                 </div>
                 <p className="total-price">Subtotal: ₹ {cart.quantity * cart.price}</p>
             </div>
-            <div className="item-remove">
+            {/* <div className="item-remove">
                 <AiOutlineClose />
-            </div>
+            </div> */}
         </div>
     </div>
   )

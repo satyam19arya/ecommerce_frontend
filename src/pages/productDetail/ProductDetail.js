@@ -56,8 +56,8 @@ const  ProductDetail = () => {
 
               <div className="return-policy">
                   <ul>
-                    <li>This product is made to order and is typically printed in 3-6 working days. Your entire order will ship out together</li>
-                    <li>Since this product is printed on demand especially for you, it is not eligible for cancellations and returns. Read our Return Policy</li>
+                    <li>This item is made to order and once ordered it can't be cancelled.</li>
+                    <li>Since this item is cooked on demand especially for you, it is not eligible for cancellations and returns. Read our Return Policy</li>
                   </ul>
               </div>
           </div>

@@ -34,7 +34,7 @@ const Home = () => {
         <section className="collection container">
             <div className="info">
                 <h2 className="heading">Order By Categories</h2>
-                <p className="subheading">Order from the best, our T-shirts and Posters Collection</p>
+                <p className="subheading">We provide variety of food and beverages recipes with high taste from our experienced chefs.</p>
             </div>
             <div className="content">
                 {categories?.map((category) => (
@@ -46,7 +46,7 @@ const Home = () => {
         <section className="collection container">
             <div className="info">
                 <h2 className="heading">Our Top Picks</h2>
-                <p className="subheading"> All New Designs, Same Old Details</p>
+                <p className="subheading"> Our Regular Menu Pack</p>
             </div>
             <div className="content">
                 {topProducts?.map((product) => (

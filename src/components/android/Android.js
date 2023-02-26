@@ -11,7 +11,7 @@ const Android = () => {
             <div className="android">
                 <div className="heading">
                     <h1>Download our mobile app</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt necessitatibus aliquam quod quis quibusdam ullam repellendus quas facere dicta praesentium.</p>
+                    <p>Our android app is currently in development and once released we will notify you. Please subscribe to our newsletter for latest updates and offers. Thank you for using our website.</p>
                     <div>
                       <a href="ff" className='store'><img src={google} alt=""/></a>
                       <a href="ff"><img src={app} alt=""/></a>

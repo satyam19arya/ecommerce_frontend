@@ -1,8 +1,8 @@
 import React from 'react';
 import './Contact.scss';
-import { MdOutlineEmail } from 'react-icons/md';
-import { BsLinkedin } from 'react-icons/bs';
-import { BsWhatsapp } from 'react-icons/bs';
+// import { MdOutlineEmail } from 'react-icons/md';
+// import { BsLinkedin } from 'react-icons/bs';
+// import { BsWhatsapp } from 'react-icons/bs';
 
 import { useRef } from 'react';
 import emailjs from 'emailjs-com';
@@ -28,7 +28,7 @@ const Contact = () => {
                 <h3>Contact us</h3>
 
                 <div className='container contact_container'>
-                    <div className='contact_options'>
+                    {/* <div className='contact_options'>
                         <article className='contact_option'>
                             <MdOutlineEmail className='logo'/>
                             <h4>Email</h4>
@@ -46,7 +46,7 @@ const Contact = () => {
                             <h4>WhatsApp</h4>
                             <a href="https://api.whatsapp.com/send?phone=9452851038" target="__blank">Send a message</a>
                         </article>
-                    </div>
+                    </div> */}
 
                     <form ref={form} onSubmit={sendEmail}>
                         <input type="text" name='name' placeholder='Enter your name' required />

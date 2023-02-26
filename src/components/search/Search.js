@@ -17,7 +17,7 @@ const Search = ({onClose}) => {
     const productResponse = await axiosClient.get(`/products?populate=*&filters[title][$contains]=${query}`);
     const data = productResponse.data.data;
     setData(data);
-    console.log(data);
+    // console.log(data);
  }
 
   useEffect(() => {

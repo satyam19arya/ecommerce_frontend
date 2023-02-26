@@ -69,7 +69,7 @@ const Footer = () => {
                   <img src={creditCardImg} alt="credit card img" />
               </div>
               <p>By continuing past this page, you agree to our Terms of Service, Privacy Policy and Content Policies. All trademarks are properties of their respective owners.</p>
-              <p>Copyright {new Date().getFullYear()} © <strong>E-commerce</strong></p>
+              <p>Copyright {new Date().getFullYear()} © <strong>SRM Restro</strong></p>
           </div>
       </div>
     </div>

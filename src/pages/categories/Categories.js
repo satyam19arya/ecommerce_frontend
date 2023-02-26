@@ -52,8 +52,8 @@ function updateCategory(e) {
 
         <div className="header">
           <div className="info">
-              <h2>Explore All Print and Artwork</h2>
-              <p>India's largest collection of wall posters for your bedroom, living room, kids room, kitchen and posters & art prints at highest quality lowest price guaranteed</p>
+              <h2>Taste that makes you go yummmmm🤤</h2>
+              <p>I like people who love to eat. They are the best kind of people in the world. Good food never fails in bringing people together.</p>
           </div>
         </div>
 

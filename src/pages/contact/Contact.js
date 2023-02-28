@@ -24,7 +24,7 @@ const Contact = () => {
 
     return(
         <div>
-            <section className='contact' data-aos="flip-right">
+            <section className='contact'>
                 <h3>Contact us</h3>
 
                 <div className='container contact_container'>

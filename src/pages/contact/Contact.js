@@ -23,7 +23,7 @@ const Contact = () => {
       };
 
     return(
-        <div>
+        <div data-aos="flip-right">
             <section className='contact' data-aos="flip-right">
                 <h3>Contact us</h3>
 

@@ -4,6 +4,7 @@ import Product from "../../components/product/Product";
 import { useNavigate, useParams } from "react-router";
 import { useSelector } from "react-redux";
 import { axiosClient } from "../../utils/axiosClient";
+import logo from '../../assets/srmlogo.png';
 
 const Categories = () => {
   const navigate = useNavigate();
@@ -54,6 +55,9 @@ function updateCategory(e) {
           <div className="info">
               <h2>Taste that makes you go yummmmm🤤</h2>
               <p>I like people who love to eat. They are the best kind of people in the world. Good food never fails in bringing people together.</p>
+          </div>
+          <div className="logo">
+             <a href="https://www.srmup.in/" target="__blank"><img src={logo} alt=""/></a>
           </div>
         </div>
 

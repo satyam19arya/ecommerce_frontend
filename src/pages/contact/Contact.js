@@ -60,7 +60,7 @@ const Contact = () => {
                 pageId="1013991418744704"
                 language="sv_SE"
                 themeColor={"#000000"}
-                bottomSpacing={300}
+                bottomSpacing={50}
                 loggedInGreeting="loggedInGreeting"
                 loggedOutGreeting="loggedOutGreeting"
                 greetingDialogDisplay={"show"}

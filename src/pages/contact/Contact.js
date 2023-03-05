@@ -6,7 +6,6 @@ import './Contact.scss';
 
 import { useRef } from 'react';
 import emailjs from 'emailjs-com';
-// import { MessengerChat } from "react-messenger-chat-plugin";
 
 const Contact = () => {
     const form = useRef();
@@ -56,16 +55,6 @@ const Contact = () => {
                         <button type='submit' className='btn-primary'>Send Message</button>
                     </form>
                 </div>
-                {/* <MessengerChat
-                pageId="1013991418744704"
-                language="en_US"
-                themeColor={"#000000"}
-                bottomSpacing={50}
-                loggedInGreeting="loggedInGreeting"
-                loggedOutGreeting="loggedOutGreeting"
-                greetingDialogDisplay={"show"}
-                debugMode={true}
-            /> */}
             </section>
         </div>
     );

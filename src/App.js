@@ -14,7 +14,6 @@ import Return from './pages/return/Return';
 import LoadingBar from 'react-top-loading-bar';
 import {useSelector} from 'react-redux';
 import Payments from "./components/payments/Payment";
-import { MessengerChat, showMessenger, hideMessenger, showDialog, hideDialog, setMessengerHeight } from 'react-messenger-customer-chat';
 
 function App() {
   const dispatch = useDispatch();
@@ -36,12 +35,6 @@ function App() {
 
   return (
     <div>
-      <button onClick={() => {showMessenger(true)}}>show messenger</button>
-      <button onClick={() => {hideMessenger()}}>hide messenger</button>
-      <button onClick={() => {showDialog()}}>show dialog</button>
-      <button onClick={() => {hideDialog()}}>hide dialog</button>
-      <button onclick={() => {setMessengerBottomSpacing(100)}}>set chat 100px in botto spacing</button>
-      <MessengerChat pageId='1013991418744704' />
       <LoadingBar color='#5f9fff' height='4px' ref={loadingRef} />
       <Navbar />
       <main>

@@ -57,15 +57,9 @@ const Home = () => {
 
         <section id="book-food">
             <div className="book-food">
-                <div className="container">
                 <div className="text-center">
-                    <div className="heading">
-                        <h2>Want to know about us?</h2>
-                    </div>
-                    <div className="sub-heading">
+                    <h2 className="heading">Want to know about us?</h2>
                     <button className="btn-primary">Click here</button>
-                    </div>
-                </div>
                 </div>
             </div>
         </section>

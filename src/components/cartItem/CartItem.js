@@ -1,7 +1,5 @@
 import React from 'react';
 import './CartItem.scss';
-// import dummyImage from '../../assets/naruto.jpeg';
-// import { AiOutlineClose } from "react-icons/ai";
 import { addToCart, removeFromCart } from "../../redux/slices/cartSlice";
 import { useDispatch } from "react-redux";
 

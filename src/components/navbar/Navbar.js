@@ -40,7 +40,7 @@ const Navbar = () => {
           </div>
 
           <div className="nav-center">
-                <Link to="/"><h2 className="banner">SRM Restaurant</h2></Link>
+                <Link to="/"><h2 className="banner">CrazyCart</h2></Link>
           </div>
 
           <div className="nav-right">

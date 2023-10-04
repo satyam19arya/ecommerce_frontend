@@ -34,7 +34,7 @@ const Search = ({onClose}) => {
       <div className="search-result-content">
          {!data?.data?.length && (
             <div className="start-msg">
-                Start typing to see items you are looking for🤤
+                Start typing to see items you are looking for👀
             </div>
           )}
         <div className="search-results">

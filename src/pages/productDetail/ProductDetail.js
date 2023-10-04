@@ -57,7 +57,7 @@ const  ProductDetail = () => {
               <div className="return-policy">
                   <ul>
                     <li>This item is made to order and once ordered it can't be cancelled.</li>
-                    <li>Since this item is cooked on demand especially for you, it is not eligible for cancellations and returns. Read our Return Policy</li>
+                    <li>Since this item is made on demand especially for you, it is not eligible for cancellations and returns. Read our Return Policy</li>
                   </ul>
               </div>
           </div>

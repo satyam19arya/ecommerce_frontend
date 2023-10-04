@@ -12,22 +12,6 @@ const Categories = () => {
   const categories = useSelector((state) => state.categoryReducer.categories);
   const [products, setProducts] = useState([]);
 
-
-//   const categoryList = [
-//     {
-//         id: "posters",
-//         value: "Posters",
-//     },
-//     {
-//         id: "anime",
-//         value: "Anime",
-//     },
-//     {
-//         id: "coding",
-//         value: "Coding",
-//     }
-// ];
-
 async function fetchProducts() {
   const url = params.categoryId
       ? `/products?populate=image&filters[category][key][$eq]=${params.categoryId}`
@@ -67,14 +51,6 @@ function updateCategory(e) {
                         <label htmlFor={item.id}>{item.attributes.title}</label>
                     </div>
                 ))}
-                {/* <div className='filter-radio'>
-                   <input name="category" type="radio" id="tv-shows"/>
-                   <label htmlFor="tv-shows">TV Shows</label>
-                </div>
-                <div className='filter-radio'>
-                   <input name="category" type="radio" id="sports"/>
-                   <label htmlFor="sports">Sports</label>
-                </div> */}
             </div>
           </div>
           <div className="products-box">

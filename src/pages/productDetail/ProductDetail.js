@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import './ProductDetail.scss';
-// import dummyImg from "../../assets/naruto.jpeg";
 import { useParams } from "react-router";
 import { axiosClient } from "../../utils/axiosClient";
 import Loader from "../../components/loader/Loader";
@@ -51,7 +50,7 @@ const  ProductDetail = () => {
                         <span className="quantity">{quantity}</span>
                         <span className="btn increment" onClick={() => dispatch(addToCart(product))}>+</span>
                   </div>
-                  <button className="btn-primary add-to-cart" onClick={() => dispatch(addToCart(product))}>Add to Cart</button>
+                  {/* <button className="btn-primary add-to-cart" onClick={() => dispatch(addToCart(product))}>Add to Cart</button> */}
               </div>
 
               <div className="return-policy">

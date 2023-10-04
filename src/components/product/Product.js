@@ -1,6 +1,5 @@
 import React from 'react';
 import './Product.scss';
-// import dummyImg from '../../assets/naruto.jpeg';
 import { useNavigate } from "react-router";
 
 const Product = ({product}) => {

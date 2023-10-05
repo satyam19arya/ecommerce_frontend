@@ -84,7 +84,7 @@
 @media screen and (max-width: 768px){
     .ProductDetail{
         .product-layout{
-            flex-direction: column;
+            grid-template-columns: 100%;
 
             .product-info{
                 margin-top: 0;

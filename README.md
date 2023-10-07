@@ -27,3 +27,11 @@ sudo cp -r build/* /var/www/html
 Note:
 - Add env variables
 - Update BrowserRouter to HashRouter in index.js file
+
+Launch Template User-Data script
+```
+#!/bin/bash
+sudo apt update -y
+sleep 90
+sudo systemctl start apache2.service
+```
